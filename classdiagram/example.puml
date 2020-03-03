@@ -1,0 +1,28 @@
+@startuml 
+
+object contact{
+  type = "seller"
+  email = "some@company.com"
+  name = ""
+  id = 123    
+}
+
+object account {
+  type = "seller"
+  name = ""
+  id = 123
+}
+
+object Deal
+
+object LoanData 
+
+object PropertyData
+
+account o-- "*" contact
+
+account o-- "*" Deal
+Deal o-- "*" LoanData
+Deal o-- "*" PropertyData
+
+@enduml
