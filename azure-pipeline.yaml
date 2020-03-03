@@ -20,7 +20,7 @@ steps:
   displayName: Install Node Plant UML
   inputs:
     command: 'custom'
-    customCommand: 'install node-plantuml-test -g' 
+    customCommand: 'install node-plantuml-vizjs -g' 
 - task: PowerShell@2
   displayName: Check Out
   inputs:
